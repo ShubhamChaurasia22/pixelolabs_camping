@@ -1,0 +1,115 @@
+/* Variables CSS */
+:root {
+    --header-height: 4.3rem;
+
+    /* Colors */
+    --ribbon-color: hsl(154, 77%, 31%);
+    --text-color: hsl(138, 80%, 12%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsla(154, 77%, 31%, 0.8);
+    --box-shadow: hsla(210, 55%, 24%, .1);
+    --border-color: hsl(51, 75%, 58%);
+
+    /*========== Font and typography ==========*/
+    --inter-bold-font: "Inter-Bold", sans-serif;
+    --mr_alexbold-font: "mr_alexbold", serif;
+    --heebo_regular-font: "Heebo-Regular", sans-serif;
+    --heebo_bold-font: "Heebo-Regular_Bold", sans-serif;
+    --big-font-size: 5.625rem;
+    --medium-font-size: 3.125rem;
+    --hero-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    --xsmall-font-size: .75rem;
+    --xxsmall-font-size: .5rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-fixed: 100;
+    --z-cross: 1000;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-sm,
+.img-md,
+.img-lg {
+    display: none;
+    width: 100%;
+}
+
+/* Reusable CSS Classes */
+
+.display-none {
+    display: none !important;
+}
+
+.main {
+    overflow: hidden;
+    position: relative;
+    top: 35px;
+    left: 0;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-btn,
+.adventure-btn,
+.discovery-btn,
+.form-submit {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .hero-img {
+        background: url(../images/hero-image-sm.png) no-repeat center center fixed;
+        width: 100%;
+        height: fit-content;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-img {
+        width: 100%;
+        height: fit-content;
+        background: url(../images/bitmap-22.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+}
